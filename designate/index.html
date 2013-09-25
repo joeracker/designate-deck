@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Getting Started with deck.js</title>
+	<title>Openstack DNSaaS: Introducing Designate</title>
 	
-	<meta name="description" content="A jQuery library for modern HTML presentations">
-	<meta name="author" content="Caleb Troughton">
+	<meta name="description" content="An introduction to using Openstack DNSaaS.">
+	<meta name="author" content="Mike Sisk">
 	<meta name="viewport" content="width=1024, user-scalable=no">
 	
 	<!-- Core and extension CSS files -->
@@ -29,13 +29,37 @@
 	<link rel="stylesheet" href="../themes/transition/horizontal-slide.css">
 	
 	<script src="../modernizr.custom.js"></script>
+	<style>
+	div img.rax{
+		position: absolute;
+		bottom: 100px;
+		right: 100px;
+	}
+	#title h1 {
+		position: static !important;
+	}
+	#title h2 {
+		padding: 200px 0px 0px 0px;
+		font-size: 4em;
+		color: #000 !important;
+		border-bottom: 0px;
+	}
+	#title h3 {
+		color: #c00;
+		padding-top: 0px;
+	}
+	</style>
 </head>
 
 <body class="deck-container">
 
 <!-- Begin slides -->
-<section class="slide" id="title-slide">
-	<img src="title-mike.png" width="800" height="600">
+<section class="slide" id="title">
+	<h2>Openstack DNSaaS</h2>
+	<h3>Introducing Designate</h3>
+	<p>Emmanuelle Ankutse<br>
+		Rackspace Cloud DNS Team</p>
+	<div><img src="rax.png" class="rax"></div>
 </section>
 
 <section class="slide" id="about-dns">
@@ -76,33 +100,28 @@
 <section class="slide" id="more">
 	<h2>It's been good, but we want more!</h2>
 	<ul>
-		<li>DNS is spread over three different teams.</li>
-		<li>Operationally complex.</li>
-		<li>Multiple Languages.</li>
-		<li>Closed-source custom software.</li>
+		<li>More features</li>
+		<li>Faster development</li>
+		<li>Simpler deployments</li>
 	</ul>
 </section>
 
 <section class="slide" id="what-next">
 	<h2>What next?</h2>
 	<ul>
-		<li>Centralize ownership.</li>
-		<li>Greenfield.</li>
-		<li>Or....</li>
+		<li>Centralize ownership</li>
+		<li>Greenfield</li>
+		<li>Or.... </li>
 	</ul>
-</section>
-
-<section class="slide" id="designate">
-	<h2>Introducing Designate!</h2>
-		<p>(The DNSaaS formerly known as Moniker)</p>
+	<p>...adopt Designate (The DNSaaS formerly known as "Moniker")</p>
 </section>
 
 <section class="slide" id="history">
 	<h2>Designate History</h2>
 	<ul>
-		<p>Started by HP in 2012.</p>
-		<p>Incubation in 2013 (cross your fingers!).</p>
-		<p>In production as HP Cloud DNS.</p>
+		<li>Started by HP in 2012.</li>
+		<li>Incubation in 2013 (cross your fingers!).</li>
+		<li>In production as HP Cloud DNS.</li>
 	</ul>
 </section>
 
@@ -193,7 +212,7 @@
 		<p>Docs: <a href="http://designate.readthedocs.org">http://designate.readthedocs.org</a></p>
 	</ul>
 	<p>&nbsp;</p>
-	<img src="rax.png" width="600" height="179">
+	<img class="rax" src="rax.png" >
 </section>
 
 <!-- deck.navigation snippet -->
